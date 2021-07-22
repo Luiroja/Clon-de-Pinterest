@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:white;
+}
+nav {
+    width: 98vw;
+    margin-top: 10px;
+}
+nav ul {
+    width:100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.icon {
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+.icon:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height:3rem;
+    background-color: rgba(128, 128, 128, 0.116);
+    border-radius: 50%;
+}
+.btn {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+} 
+
+input {
+    background-color: rgba(128, 128, 128, 0.116);
+    border: 1px rgba(128, 128, 128, 0.116) solid;
+    border-radius: 20px;
+    width: 70vw;
+    height: 40px;
+}
+.input:focus {
+    border: 1px solid rgba(128, 128, 128, 0.116);
+    outline: none;
+}
+
+/* CSS OF ITEMS  */
+/* CSS PARA IMG ITEM CON BACKGROUND */
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+div {
+    display:grid;
+    grid-template-rows: 1fr auto;
+    margin: 10px;
+    break-inside: avoid; 
+}
+
+.item:hover {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* CSS  BOTTOM INSIDE OF IMG */
+.btn-guardar {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    margin:10px -10px 10px -10px;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgb(185, 16, 39);
+}
+
+.btn-guardar:hover {
+    background-color: rgb(185, 16, 39);
+    filter: brightness(0.8);
+}
+
+div:hover > .btn-guardar {
+    visibility: visible;
+    
+} 
+
+/* CSS IMG HOVER */
+
+img:hover {
+    background-image: url('');
+    background-color: rgba(58, 56, 56, 0.555);
+    filter: brightness(0.6);
+}
+
+div > img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+  }
+
+  main {
+    justify-items: center;
+    width: 95vw;
+    margin: 20px;
+    column-count: 5;
+    column-gap: 10px;
+    justify-items: center;
+    
+}
+/* CSS ICONS INSIDE IMG */
+
+.icon-img {
+    background-color: white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.4rem;
+    justify-content: center;
+}
+.icon-img:hover {
+    width: 2rem;
+    height: 2rem;
+}
+.list-group {
+    font-weight: bold;
+    list-style-type: none;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    align-self: space-between;
+}
+.list-group:hover {
+    display: flex;
+    justify-content: space-between;
+    filter: brightness(0.8);
+}
+div:hover > .list-group {
+    visibility: visible;
+}
+
+/* CSS AUTOR NAME INSIDE IMG */
+.icon-autor {
+    color:black;
+    display: flex;
+    justify-content: center;
+    width:7rem;
+    height:2rem;
+    background-color: white;
+    border-radius: 4rem;
+    text-decoration: none;
+}
+
+.icon-autor:hover {
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    width:7rem;
+    height:2rem;
+    background-color: white;
+    border-radius: 4rem;
+}
+/* CSS PARA ICONOS DE INFORMACIÓN GENERAL*/
+
+.nav-info {
+    background-color: white;
+}
+
+.icon-info {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+.icon-info:hover {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(216, 213, 213);
+}
+.icon-info-1 {   
+    left: 92vw;
+    top: 73vh;
+}
+.icon-info-2 {
+    left: 92vw;
+    top: 85vh;
+}
